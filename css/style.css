@@ -343,7 +343,7 @@ body {
   position: relative;
   overflow: hidden;
 }
-#banner {
+/*#banner {
   position: absolute;
   top: 0;
   left: 0;
@@ -354,7 +354,7 @@ body {
   -moz-background-size: cover;
   background-size: cover;
   z-index: -1;
-}
+}*/
 #header-title {
   text-align: center;
   height: 40px;
@@ -366,18 +366,18 @@ body {
 #logo,
 #subtitle {
   text-decoration: none;
-  color: #fff;
+  color: #333;
   font-weight: 300;
   text-shadow: 0 1px 4px rgba(0,0,0,0.3);
 }
 #logo {
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 20px;
+  line-height: 20px;
   letter-spacing: 2px;
 }
 #subtitle {
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 10px;
+  line-height: 10px;
   letter-spacing: 1px;
 }
 #subtitle-wrap {
