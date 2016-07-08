@@ -81,10 +81,6 @@ body {
   color: #000;
   background: #fff;
 }
-ol,
-ul {
-  list-style: none;
-}
 table {
   border-collapse: separate;
   border-spacing: 0;
@@ -121,6 +117,7 @@ html,
 body,
 #container {
   height: 100%;
+  overflow:auto;
 }
 body {
   background: #eee;
@@ -128,9 +125,9 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 .outer {
-  width: 70%;
+	width:70%;
   max-width: 1220px;
-  margin: 0 auto;
+  margin-left: auto;
   padding: 0 20px;
 }
 .outer:before,
@@ -141,6 +138,19 @@ body {
 .outer:after {
   clear: both;
 }
+.title-main{
+	display:block;
+	margin-bottom:10px;
+	font-size: 24px;
+}
+#experience{
+	background-color:#eee;
+	padding:0px;
+	margin:0px;}
+#showworks{
+	background-color:#eee;
+	padding:0px;
+	margin:0px;}
 .inner {
   display: inline;
   float: left;
@@ -176,6 +186,7 @@ body {
   transition: 0.2s ease-out;
   z-index: 1;
   background: #eee;
+  overflow:auto;
 }
 .mobile-nav-on #wrap {
   left: 280px;
@@ -315,6 +326,11 @@ body {
   float:left; 
   border:0;
 }
+#header：after{
+	content:"";
+	display:block;
+	height:0px;
+	clear:both;}
 /*#header:before,
 #header:after {
   content: "";
@@ -543,10 +559,10 @@ body {
 }
 .article-title {
   text-decoration: none;
-  font-size: 2em;
+  font-size: 20px;
   font-weight: bold;
-  color: #555;
-  line-height: 1.1em;
+  color: #69F;
+  line-height: 1.5em;
   -webkit-transition: color 0.2s;
   -moz-transition: color 0.2s;
   -ms-transition: color 0.2s;
