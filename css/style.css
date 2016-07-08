@@ -114,8 +114,8 @@ button::-moz-focus-inner {
   font-family: FontAwesome;
   font-style: normal;
   font-weight: normal;
-  src: url("fonts/fontawesome-webfont.eot?v=#4.0.3");
-  src: url("fonts/fontawesome-webfont.eot?#iefix&v=#4.0.3") format("embedded-opentype"), url("fonts/fontawesome-webfont.woff?v=#4.0.3") format("woff"), url("fonts/fontawesome-webfont.ttf?v=#4.0.3") format("truetype"), url("fonts/fontawesome-webfont.svg#fontawesomeregular?v=#4.0.3") format("svg");
+  src: url("file:///css/fonts/fontawesome-webfont.eot?v=#4.0.3");
+  src: url("file:///css/fonts/fontawesome-webfont.eot?#iefix&v=#4.0.3") format("embedded-opentype"), url("file:///css/fonts/fontawesome-webfont.woff?v=#4.0.3") format("woff"), url("file:///css/fonts/fontawesome-webfont.ttf?v=#4.0.3") format("truetype"), url("fonts/fontawesome-webfont.svg#fontawesomeregular?v=#4.0.3") format("svg");
 }
 html,
 body,
@@ -128,6 +128,7 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 .outer {
+  width: 70%;
   max-width: 1220px;
   margin: 0 auto;
   padding: 0 20px;
@@ -309,11 +310,12 @@ body {
   font-weight: bold;
 }
 #header {
+  width:29%;
   height: 300px;
-  position: relative;
-  border-bottom: 1px solid #ddd;
+  float:left; 
+  border: 1px solid #ddd;
 }
-#header:before,
+/*#header:before,
 #header:after {
   content: "";
   position: absolute;
@@ -334,7 +336,7 @@ body {
   background: -moz-linear-gradient(transparent, rgba(0,0,0,0.2));
   background: -ms-linear-gradient(transparent, rgba(0,0,0,0.2));
   background: linear-gradient(transparent, rgba(0,0,0,0.2));
-}
+}*/
 #header-outer {
   height: 100%;
   position: relative;
@@ -1272,7 +1274,7 @@ pre .keyword,
 pre .javascript .function {
   color: #c9c;
 }
-@media screen and (max-width: 479px) {
+/*@media screen and (max-width: 479px) {
   #mobile-nav {
     position: absolute;
     top: 0;
@@ -1380,4 +1382,4 @@ pre .javascript .function {
 .tagcloud a {
   margin-right: 5px;
   display: inline-block;
-}
+}*/
