@@ -145,14 +145,6 @@ body {
 	display:block;
 	height:0px;
 	clear:both;}
-#header:before,
-#header:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 40px;
-}
 /*#header:before {
   top: 0;
   background: -webkit-linear-gradient(rgba(0,0,0,0.2), transparent);
