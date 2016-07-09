@@ -213,26 +213,26 @@ body {
 }
 
 
+ol li a { display: block; height: 30px; text-align: left; line-height: 30px; width:350px; background: #eee; margin-bottom: 2px; }
+
 
 
 .demos-title,
-.article-title {
+.li-title {
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
   color: #69F;
-  line-height: 1.5em;
   -webkit-transition: color 0.2s;
   -moz-transition: color 0.2s;
   -ms-transition: color 0.2s;
   transition: color 0.2s;
-  width:400px;
 }
-a.demos-title：hover,
-a.article-title:hover {
-	font-size:150%;
-	background-color:#0F0
-  color: #fff;
+
+a.li-title:hover {
+	color:#FFF;
+	background-color: #090;
+	text-indent:50px;
 }
 #footer{
 	background-color:#000;
