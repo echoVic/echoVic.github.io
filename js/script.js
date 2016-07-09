@@ -6,7 +6,7 @@ window.onload=function(){
 			clearInterval(This.time);
 			This.time=setInterval(function(){
 					This.style.width=This.offsetWidth+8+"px";
-					if(This.offsetWidth>=380)
+					if(This.offsetWidth>=400)
 					clearInterval(This.time);
 				},30)
 		}
