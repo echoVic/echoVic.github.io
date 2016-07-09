@@ -120,8 +120,9 @@ body {
 .outer {
 	width:70%;
   max-width: 1220px;
-  margin-left: auto;
-  padding: 0 20px;
+  margint:0;
+  padding: 20px 20px;
+  float:right;
 }
 .outer:before,
 .outer:after {
