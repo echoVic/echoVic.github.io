@@ -130,7 +130,7 @@ body {
 	background-color:#eee;
 	padding:0px;
 	margin:0px;
-	height:400px;}
+	height:350px;}
 
 #header {
   width:27%;
@@ -138,6 +138,7 @@ body {
   float:left; 
   border:0;
   padding:10px 10px;
+  margin-top:20px;
 }
 #header：after{
 	content:"";
