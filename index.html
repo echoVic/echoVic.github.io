@@ -35,6 +35,7 @@
                         <h3 class="title-main">作品展示</h3>
                         <ol>
                         	<li><a class="li-title" href="demo/贝济埃曲线.html">贝济埃曲线</a></li>
+                            <li><a class="li-title" href="demo/计算机报价单/计算机报价单.html">计算机报价单</a></li>
                         </ol>
                     </div>
                     <div id="experience" class="article article-type-post">
@@ -54,35 +55,7 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
-<script src="/js/script.js">
-
-window.onload=function(){
-    var aA=document.getElementsByTagName('a');
-	for(var i=0; i<aA.length; i++){
-		aA[i].onmouseover=function(){
-			var This=this;
-			clearInterval(This.time);
-			This.time=setInterval(function(){
-					This.style.width=This.offsetWidth+8+"px";
-					if(This.offsetWidth>=400)
-					clearInterval(This.time);
-				},30)
-		}
-		aA[i].onmouseout=function(){
-				clearInterval(this.time);
-				var This=this;
-				this.time=setInterval(function(){
-					This.style.width=This.offsetWidth-8+"px";
-					if(This.offsetWidth<=350){
-						This.style.width='350px';
-						clearInterval(This.time);
-					}
-				},30)
-		}
-	}
-}
-
-</script>
+<script src="/js/script.js"></script>
     </div>
     <div id="footer">  
         <div class="foot-outer">
