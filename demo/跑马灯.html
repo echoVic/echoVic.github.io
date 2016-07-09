@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>跑马灯</title>
+    <script language="javascript">
+        var msg = "欢迎访问傻傻网！！！网址：“www.shysha.com”";
+        var interval = 400;
+        var seq = 0;
+        function LenScroll()
+        {
+            document.nextForm.lenText.value = msg.substring(seq,msg.length) + " " + msg;
+            seq++;
+            if (seq > msg.length)
+                seq = 0;
+            window.setTimeout("LenScroll();", interval);
+        }
+    </script>
+    <style type="text/css">
+        body{
+            background-color: #FFFFFF;
+        }
+        input{
+            background: tansparent;
+            border: none;
+            color: blue;
+            font-size: 45px;
+            font-weight: bold;
+            font-family: 黑体;
+        }
+    </style>
+</head>
+<body onload="LenScroll()">
+<center>
+    <form name="nextForm">
+        <input type="text" name="lenText">
+    </form>
+</center>
+</body>
+</html>

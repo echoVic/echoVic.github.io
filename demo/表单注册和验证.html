@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>表单注册和验证</title>
+    <script language="javascript">
+        function check()
+        {
+            fr = document.form1;
+            if(fr.uid.value=="")  //用户名不能为空
+            {
+                alert("用户名ID必须填写！");
+                fr.uid.focus();
+                return false;
+            }
+            if((fr.psw1.value!="") || (fr.psw2.value!=""))  //两次密码输入必须一致
+            {
+                if (fr.psw1.value != fr.psw2.value) {
+                    alert("密码不一致，请重新输入并验证密码！");
+                    fr.psw1.focus();
+                    return false;
+                }
+            }
+             else
+                {
+                    alert("密码不能为空！");
+                    fr.psw1.focus();
+                    return false;
+                }
+            if(fr.gender.value == "")
+            {
+                alert("性别必须填写！");
+                fr.name.focus();
+                return false;
+            }
+            fr.submit();
+            if(fr.email.value !="")
+            {
+                if(!isEmail(fr.email.value))
+                {
+                    alert("请输入正确的邮件名称！");
+                    fr.email.focus();
+                    return false
+                }
+            }
+            function isEmail(theStr)
+            {
+                var atindex = theStr.indexOf('@');
+                var dotindex = theStrindexOf('.',atindex);
+                var flag = true;
+                thesub = theStr.substring(0,dotindex+1);
+                if((atindex<1) || (atindex!=theStr.lastIndexOf('@')) || (dotindex<atindex+2) || (theStr.length<=thesub.length))
+                {
+                    flag = false;
+                }
+                else
+                {
+                    flag = true;
+                }
+                return(flag);
+            }
+        }
+    </script>
+</head>
+<body>
+<form name="form1" id="form1" method="post" action="reg2.jsp">
+    <table border="1" align="center" width="350">
+        <tr align="middle"><th colspan="2" height="24">新用户注册</th> </tr>
+        <tr>
+            <td width="40%">
+            <B>用&nbsp;户&nbsp;名</B>：</td>
+            <td width="60%"> <input maxlength="10" size="30" name="uid" type="text"></td>
+        </tr>
+        <tr>
+            <td><B>性&nbsp;&nbsp;&nbsp;&nbsp;别</B></td>
+            <td><input type="radio" checked value="boy" name="gender">男孩
+            <input type="radio" value="girl" name="gender">女孩</td>
+        </tr>
+        <tr>
+            <td><B>密&nbsp;&nbsp;&nbsp;&nbsp;码</B>：</td>
+            <td><input name="psw1" type="password" size="32"></td>
+        </tr>
+        <tr>
+            <td><b>确认密码</b>：</td>
+            <td><input name="psw2" type="password" size="32"></td>
+        </tr>
+        <tr>
+            <td ><b>密码问题</b>：</td>
+            <td ><input type=text size="30" name="question" type="text"></td>
+        </tr>
+        <tr>
+            <td ><b>问题答案</b>：</td>
+            <td ><input type=text size="30" name="answer" type="text"></td>
+        </tr>
+        <tr>
+            <td ><b>Email</b>：</td>
+            <td><input maxlength="50" size="30" name="email" type="text"></td>
+        </tr>
+        <tr>
+            <td><b>联系电话</b>：</td>
+            <td><input maxlength="50" size="30" name="tel" type="text"></td>
+        </tr>
+        <tr>
+            <td ><b>职&nbsp;&nbsp;&nbsp;&nbsp;业</b>：</td>
+            <td ><select name="career" class="input1">
+                <option value="student" selected="student">学生</option>
+                <option value="worker">工人</option>
+                <option value="teacher">老师</option>
+                <option value="farmer">农民</option>
+                <option value="business">商人</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td ><input type="submit" value="注 册" name="Submit" onclick="return check()">
+            <input type="reset" value="清 除" name="Submit2"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
