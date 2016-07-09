@@ -1,3 +1,7 @@
+#container{
+  width: 1024px;
+  margin: 0 auto;
+}
 #logo,
 #subtitle {
   text-decoration: none;
@@ -833,4 +837,3 @@ pre .javascript .function {
 }
 
 /* CSS Document */
-

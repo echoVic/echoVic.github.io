@@ -215,7 +215,7 @@ body {
 
 
 
-.demos,
+.demos-title,
 .article-title {
   text-decoration: none;
   font-size: 20px;
@@ -226,9 +226,13 @@ body {
   -moz-transition: color 0.2s;
   -ms-transition: color 0.2s;
   transition: color 0.2s;
+  width:400px;
 }
+a.demos-title：hover,
 a.article-title:hover {
-  color: #258fb8;
+	font-size:150%;
+	background-color:#0F0
+  color: #fff;
 }
 #footer{
 	background-color:#000;
