@@ -1,75 +1,58 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>echoVic作品展示</title>
 
-  <title>echoVic作品展示</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="echovic的个人blog和个人作品展示。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="echoVic作品展示">
-<meta property="og:url" content="http://echovic.github.io/">
-<meta property="og:site_name" content="echoVic blog">
-<meta property="og:description" content="echovic的个人blog和个人作品展示。">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-
-    <link rel="icon" href="/favicon.png">
-
-  <link rel="stylesheet" href="/css/style.css">
-
-
-</head>
-
-<body>
-    <div id="container">
-            <div id="header">
-                        <h1 id="logo-wrap">
-                            <a href="/" id="logo">echoVic<br>blog作品展示</a>
-                        </h1>
-                        <h2 id="subtitle-wrap">
-                            <a href="/" id="subtitle">What I&#39;m doing right now, <br>I&#39;m chasing perfection</a>
-                        </h2>
-            </div>
-                <div id="main">
-                    <div id="showworks" class="works">
-                        <h3 class="title-main">作品展示</h3>
-                        <ol>
-                          <li><a class="li-title" href="demo/我的简历.html">我的简历</a></li>
-                          <li><a class="li-title" href="demo/bootstrap管理控制台/bootstrapDemo1.html">基于bootstrap框架制作的网页</a></li>
-                        	<li><a class="li-title" href="demo/贝济埃曲线.html">贝济埃曲线</a></li>
-                            <li><a class="li-title" href="demo/计算机报价单/计算机报价单.html">计算机报价单</a></li>
-                            <li><a class="li-title" href="demo/购物简易计算器/购物简易计算器.html">购物简易计算器</a></li>
-                            <li><a class="li-title" href="demo/表单注册和验证.html">表单注册和验证</a></li>
-                            <li><a class="li-title" href="demo/绘制火柴人.html">绘制火柴人</a></li>
-                            <li><a class="li-title" href="demo/制作网页随机验证码/制作网页随机验证码.html">制作网页随机验证码</a></li>
-                            <li><a class="li-title" href="demo/跑马灯.html">跑马灯</a></li>
-                            <li><a class="li-title" href="demo/滚动的菜单/制作滚动的菜单.html">向上滚动的菜单</a></li>
-                        </ol>
-                    </div>
-                    <div id="experience" class="article article-type-post">
-                        <h3 class="title-main">经验交流</h3>
-                        <ol>
-                            <li>
-                                <a class="li-title" href="/2016/04/16/1/">2016年春季互联网找实习经验分享</a>
-                            </li>
-                            <li>
-                                <a class="li-title" href="/2016/03/03/My-New-Post/">搭建Hexo个人博客部署到github</a>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-
-
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-<script src="/js/script.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="page-header text-center">
+      <h1>echoVic'blog和作品展示<br />
+        <small>What I&#39;m doing right now, I&#39;m chasing perfection</small>
+      </h1>
     </div>
-    <div id="footer">
-        <div class="foot-outer">
-            <div id="footer-info" class="inner">&copy; 2016 echoVic<br>
-        </div>
-            </div>
-    </div>
-</body>
+    
+    
+	<div class="container" id="content">
+      <ul class="nav nav-pills">
+        <li class="active"><a href="#showworks" data-toggle="pill">作品展示</a></li>
+        <li><a href="#experience" data-toggle="pill">经验交流</a></li>
+      </ul>
+      
+     <div class="tab-content">
+       <div class="tab-pane active" id="showworks">
+       <a class="list-group-item" href="demo/我的简历.html">我的简历</a>
+                          <a class="list-group-item" href="demo/bootstrap管理控制台/bootstrapDemo1.html">基于bootstrap框架制作的网页</a>
+                        	<a class="list-group-item" href="demo/贝济埃曲线.html">贝济埃曲线</a>
+                            <a class="list-group-item" href="demo/计算机报价单/计算机报价单.html">计算机报价单</a>
+                            <a class="list-group-item" href="demo/购物简易计算器/购物简易计算器.html">购物简易计算器</a>
+                            <a class="list-group-item" href="demo/表单注册和验证.html">表单注册和验证</a>
+                            <a class="list-group-item" href="demo/绘制火柴人.html">绘制火柴人</a>
+                            <a class="list-group-item" href="demo/制作网页随机验证码/制作网页随机验证码.html">制作网页随机验证码</a>
+                            <a class="list-group-item" href="demo/跑马灯.html">跑马灯</a>
+                           <a class="list-group-item" href="demo/滚动的菜单/制作滚动的菜单.html">向上滚动的菜单</a>
+       </div>
+       <div class="tab-pane" id="experience">
+         <a class="list-group-item" href="2016/04/16/1/index.html">2016年春季互联网找实习经验分享</a>
+           <a class="list-group-item" href="2016/03/03/My-New-Post/index.html">搭建Hexo个人博客部署到github</a>
+       </div>
+	 </div>
+   </div>
+<footer id="footer">
+  <p class="pull-right"><a href="#top">回到顶部</a></p>
+  <p>&copy; 2016 echoVic</p>
+</footer>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
