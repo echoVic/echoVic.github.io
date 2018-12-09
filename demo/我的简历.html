@@ -1,541 +1,882 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-      <meta charset="utf-8" />
-      <title>我的简历</title>
-      <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(171, 178, 191); overflow: auto; background-color: rgb(40, 44, 52); }
-.markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
-.markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(255, 255, 255); }
-.markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
-.markdown-preview:not([data-use-github-style]) h2 { font-size: 1.8em; font-weight: 400; }
-.markdown-preview:not([data-use-github-style]) h3 { font-size: 1.5em; font-weight: 500; }
-.markdown-preview:not([data-use-github-style]) h4 { font-size: 1.2em; font-weight: 600; }
-.markdown-preview:not([data-use-github-style]) h5 { font-size: 1.1em; font-weight: 600; }
-.markdown-preview:not([data-use-github-style]) h6 { font-size: 1em; font-weight: 600; }
-.markdown-preview:not([data-use-github-style]) strong { color: rgb(255, 255, 255); }
-.markdown-preview:not([data-use-github-style]) del { color: rgb(124, 135, 156); }
-.markdown-preview:not([data-use-github-style]) a, .markdown-preview:not([data-use-github-style]) a code { color: rgb(82, 139, 255); }
-.markdown-preview:not([data-use-github-style]) img { max-width: 100%; }
-.markdown-preview:not([data-use-github-style]) > p { margin-top: 0px; margin-bottom: 1.5em; }
-.markdown-preview:not([data-use-github-style]) > ul, .markdown-preview:not([data-use-github-style]) > ol { margin-bottom: 1.5em; }
-.markdown-preview:not([data-use-github-style]) blockquote { margin: 1.5em 0px; font-size: inherit; color: rgb(124, 135, 156); border-color: rgb(75, 83, 98); border-width: 4px; }
-.markdown-preview:not([data-use-github-style]) hr { margin: 3em 0px; border-top-width: 2px; border-top-style: dashed; border-top-color: rgb(75, 83, 98); background: none; }
-.markdown-preview:not([data-use-github-style]) table { margin: 1.5em 0px; }
-.markdown-preview:not([data-use-github-style]) th { color: rgb(255, 255, 255); }
-.markdown-preview:not([data-use-github-style]) th, .markdown-preview:not([data-use-github-style]) td { padding: 0.66em 1em; border: 1px solid rgb(75, 83, 98); }
-.markdown-preview:not([data-use-github-style]) code { color: rgb(255, 255, 255); background-color: rgb(58, 63, 75); }
-.markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1.5em 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(49, 54, 63); }
-.markdown-preview:not([data-use-github-style]) kbd { color: rgb(255, 255, 255); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(75, 83, 98) rgb(75, 83, 98) rgb(62, 68, 81); background-color: rgb(58, 63, 75); }
-.markdown-preview[data-use-github-style] { font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; line-height: 1.6; word-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); overflow: scroll; background-color: rgb(255, 255, 255); }
-.markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
-.markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
-.markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
-.markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
-.markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
-.markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
-.markdown-preview[data-use-github-style] h1, .markdown-preview[data-use-github-style] h2, .markdown-preview[data-use-github-style] h3, .markdown-preview[data-use-github-style] h4, .markdown-preview[data-use-github-style] h5, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
-.markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
-.markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
-.markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
-.markdown-preview[data-use-github-style] h1 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview[data-use-github-style] h1 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
-.markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
-.markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
-.markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
-.markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
-.markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
-.markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
-.markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
-.markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
-.markdown-preview[data-use-github-style] h5 { font-size: 1em; }
-.markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
-.markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
-.markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
-.markdown-preview[data-use-github-style] p, .markdown-preview[data-use-github-style] blockquote, .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol, .markdown-preview[data-use-github-style] dl, .markdown-preview[data-use-github-style] table, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
-.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; border: 0px none; background-color: rgb(231, 231, 231); }
-.markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
-.markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
-.markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
-.markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
-.markdown-preview[data-use-github-style] dl { padding: 0px; }
-.markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
-.markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
-.markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left-width: 4px; border-left-style: solid; border-left-color: rgb(221, 221, 221); }
-.markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
-.markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
-.markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: keep-all; }
-.markdown-preview[data-use-github-style] table th { font-weight: bold; }
-.markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
-.markdown-preview[data-use-github-style] table tr { border-top-width: 1px; border-top-style: solid; border-top-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255); }
-.markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
-.markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
-.markdown-preview[data-use-github-style] .emoji { max-width: none; }
-.markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
-.markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
-.markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
-.markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
-.markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
-.markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
-.markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
-.markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
-.markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
-.markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
-.markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
-.markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
-.markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
-.markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
-.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; border-radius: 3px; background-color: rgba(0, 0, 0, 0.0392157); }
-.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
-.markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
-.markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
-.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; border: 0px; background: transparent; }
-.markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
-.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; border-radius: 3px; background-color: rgb(247, 247, 247); }
-.markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
-.markdown-preview[data-use-github-style] pre { word-wrap: normal; }
-.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; border: 0px; background-color: transparent; }
-.markdown-preview[data-use-github-style] pre code::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
-.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; border-style: solid; border-width: 1px; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; background-color: rgb(252, 252, 252); }
-.markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
-.markdown-preview[data-use-github-style] code { color: inherit; }
-.markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
-.scrollbars-visible-always .markdown-preview pre.editor-colors::shadow .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors::shadow .horizontal-scrollbar { visibility: hidden; }
-.scrollbars-visible-always .markdown-preview pre.editor-colors:hover::shadow .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover::shadow .horizontal-scrollbar { visibility: visible; }
-.bracket-matcher .region {
-  border-bottom: 1px dotted lime;
-  position: absolute;
-}
 
-.spell-check-misspelling .region {
-  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
-}
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=10;IE=9;IE=8;IE=7;IE=EDGE">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="alternate" media="handheld" href="#" />
+    <meta charset="utf-8">
+    <title>胡子杰的简历-拉勾网-最专业的互联网招聘平台</title>
+    <meta content="拉勾网是3W旗下的互联网领域垂直招聘网站" name="description">
+    <meta content="拉勾,拉勾网,拉勾招聘,拉钩, 拉钩网 ,互联网招聘,拉勾互联网招聘, 移动互联网招聘, 垂直互联网招聘, 微信招聘, 微博招聘, 拉勾官网, 拉勾百科,跳槽, 高薪职位, 互联网圈子, IT招聘, 职场招聘, 猎头招聘,O2O招聘, LBS招聘, 社交招聘, 校园招聘, 校招,社会招聘,社招"
+        name="keywords">
+    <style>
+        * {
+            outline: none;
+        }
 
-pre.editor-colors,
-.host {
-  background-color: #282c34;
-  color: #abb2bf;
-}
-pre.editor-colors .line.cursor-line,
-.host .line.cursor-line {
-  background-color: rgba(153, 187, 255, 0.04);
-}
-pre.editor-colors .invisible,
-.host .invisible {
-  color: #abb2bf;
-}
-pre.editor-colors .cursor,
-.host .cursor {
-  border-left: 2px solid #528bff;
-}
-pre.editor-colors .selection .region,
-.host .selection .region {
-  background-color: #3e4451;
-}
-pre.editor-colors .bracket-matcher .region,
-.host .bracket-matcher .region {
-  border-bottom: 1px solid #528bff;
-  box-sizing: border-box;
-}
-pre.editor-colors .invisible-character,
-.host .invisible-character {
-  color: rgba(171, 178, 191, 0.15);
-}
-pre.editor-colors .indent-guide,
-.host .indent-guide {
-  color: rgba(171, 178, 191, 0.15);
-}
-pre.editor-colors .wrap-guide,
-.host .wrap-guide {
-  background-color: rgba(171, 178, 191, 0.15);
-}
-pre.editor-colors .gutter .line-number,
-.host .gutter .line-number {
-  color: #636d83;
-  -webkit-font-smoothing: antialiased;
-}
-pre.editor-colors .gutter .line-number.cursor-line,
-.host .gutter .line-number.cursor-line {
-  color: #abb2bf;
-  background-color: #2c313a;
-}
-pre.editor-colors .gutter .line-number.cursor-line-no-selection,
-.host .gutter .line-number.cursor-line-no-selection {
-  background-color: transparent;
-}
-pre.editor-colors .gutter .line-number .icon-right,
-.host .gutter .line-number .icon-right {
-  color: #abb2bf;
-}
-pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before,
-.host .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before {
-  bottom: -3px;
-}
-pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed::after,
-.host .gutter:not(.git-diff-icon) .line-number.git-line-removed::after {
-  content: "";
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  width: 25px;
-  border-bottom: 1px dotted rgba(224, 82, 82, 0.5);
-  pointer-events: none;
-}
-pre.editor-colors .gutter .line-number.folded,
-.host .gutter .line-number.folded,
-pre.editor-colors .gutter .line-number:after,
-.host .gutter .line-number:after,
-pre.editor-colors .fold-marker:after,
-.host .fold-marker:after {
-  color: #abb2bf;
-}
-.comment {
-  color: #5c6370;
-  font-style: italic;
-}
-.comment .markup.link {
-  color: #5c6370;
-}
-.entity.name.type {
-  color: #e5c07b;
-}
-.entity.other.inherited-class {
-  color: #98c379;
-}
-.keyword {
-  color: #c678dd;
-}
-.keyword.control {
-  color: #c678dd;
-}
-.keyword.operator {
-  color: #abb2bf;
-}
-.keyword.other.special-method {
-  color: #61afef;
-}
-.keyword.other.unit {
-  color: #d19a66;
-}
-.storage {
-  color: #c678dd;
-}
-.storage.type.annotation,
-.storage.type.primitive {
-  color: #c678dd;
-}
-.storage.modifier.package,
-.storage.modifier.import {
-  color: #abb2bf;
-}
-.constant {
-  color: #d19a66;
-}
-.constant.variable {
-  color: #d19a66;
-}
-.constant.character.escape {
-  color: #56b6c2;
-}
-.constant.numeric {
-  color: #d19a66;
-}
-.constant.other.color {
-  color: #56b6c2;
-}
-.constant.other.symbol {
-  color: #56b6c2;
-}
-.variable {
-  color: #e06c75;
-}
-.variable.interpolation {
-  color: #be5046;
-}
-.variable.parameter {
-  color: #abb2bf;
-}
-.string {
-  color: #98c379;
-}
-.string.regexp {
-  color: #56b6c2;
-}
-.string.regexp .source.ruby.embedded {
-  color: #e5c07b;
-}
-.string.other.link {
-  color: #e06c75;
-}
-.punctuation.definition.comment {
-  color: #5c6370;
-}
-.punctuation.definition.method-parameters,
-.punctuation.definition.function-parameters,
-.punctuation.definition.parameters,
-.punctuation.definition.separator,
-.punctuation.definition.seperator,
-.punctuation.definition.array {
-  color: #abb2bf;
-}
-.punctuation.definition.heading,
-.punctuation.definition.identity {
-  color: #61afef;
-}
-.punctuation.definition.bold {
-  color: #e5c07b;
-  font-weight: bold;
-}
-.punctuation.definition.italic {
-  color: #c678dd;
-  font-style: italic;
-}
-.punctuation.section.embedded {
-  color: #be5046;
-}
-.punctuation.section.method,
-.punctuation.section.class,
-.punctuation.section.inner-class {
-  color: #abb2bf;
-}
-.support.class {
-  color: #e5c07b;
-}
-.support.type {
-  color: #56b6c2;
-}
-.support.function {
-  color: #56b6c2;
-}
-.support.function.any-method {
-  color: #61afef;
-}
-.entity.name.function {
-  color: #61afef;
-}
-.entity.name.class,
-.entity.name.type.class {
-  color: #e5c07b;
-}
-.entity.name.section {
-  color: #61afef;
-}
-.entity.name.tag {
-  color: #e06c75;
-}
-.entity.other.attribute-name {
-  color: #d19a66;
-}
-.entity.other.attribute-name.id {
-  color: #61afef;
-}
-.meta.class {
-  color: #e5c07b;
-}
-.meta.class.body {
-  color: #abb2bf;
-}
-.meta.method-call,
-.meta.method {
-  color: #abb2bf;
-}
-.meta.definition.variable {
-  color: #e06c75;
-}
-.meta.link {
-  color: #d19a66;
-}
-.meta.require {
-  color: #61afef;
-}
-.meta.selector {
-  color: #c678dd;
-}
-.meta.separator {
-  background-color: #373b41;
-  color: #abb2bf;
-}
-.meta.tag {
-  color: #abb2bf;
-}
-.underline {
-  text-decoration: underline;
-}
-.none {
-  color: #abb2bf;
-}
-.invalid.deprecated {
-  color: #523d14 !important;
-  background-color: #e0c285 !important;
-}
-.invalid.illegal {
-  color: #ffffff !important;
-  background-color: #e05252 !important;
-}
-.markup.bold {
-  color: #d19a66;
-  font-weight: bold;
-}
-.markup.changed {
-  color: #c678dd;
-}
-.markup.deleted {
-  color: #e06c75;
-}
-.markup.italic {
-  color: #c678dd;
-  font-style: italic;
-}
-.markup.heading {
-  color: #e06c75;
-}
-.markup.heading .punctuation.definition.heading {
-  color: #61afef;
-}
-.markup.link {
-  color: #c678dd;
-}
-.markup.inserted {
-  color: #98c379;
-}
-.markup.quote {
-  color: #d19a66;
-}
-.markup.raw {
-  color: #98c379;
-}
-.source.cs .keyword.operator {
-  color: #c678dd;
-}
-.source.css .property-name,
-.source.css .property-value {
-  color: #828997;
-}
-.source.css .property-name.support,
-.source.css .property-value.support {
-  color: #abb2bf;
-}
-.source.gfm .markup {
-  -webkit-font-smoothing: auto;
-}
-.source.gfm .link .entity {
-  color: #61afef;
-}
-.source.ini .keyword.other.definition.ini {
-  color: #e06c75;
-}
-.source.java .storage.modifier.import {
-  color: #e5c07b;
-}
-.source.java .storage.type {
-  color: #e5c07b;
-}
-.source.java-properties .meta.key-pair {
-  color: #e06c75;
-}
-.source.java-properties .meta.key-pair > .punctuation {
-  color: #abb2bf;
-}
-.source.js .keyword.operator {
-  color: #56b6c2;
-}
-.source.js .keyword.operator.delete,
-.source.js .keyword.operator.in,
-.source.js .keyword.operator.of,
-.source.js .keyword.operator.instanceof,
-.source.js .keyword.operator.new,
-.source.js .keyword.operator.typeof,
-.source.js .keyword.operator.void {
-  color: #c678dd;
-}
-.source.json .meta.structure.dictionary.json > .string.quoted.json {
-  color: #e06c75;
-}
-.source.json .meta.structure.dictionary.json > .string.quoted.json > .punctuation.string {
-  color: #e06c75;
-}
-.source.json .meta.structure.dictionary.json > .value.json > .string.quoted.json,
-.source.json .meta.structure.array.json > .value.json > .string.quoted.json,
-.source.json .meta.structure.dictionary.json > .value.json > .string.quoted.json > .punctuation,
-.source.json .meta.structure.array.json > .value.json > .string.quoted.json > .punctuation {
-  color: #98c379;
-}
-.source.json .meta.structure.dictionary.json > .constant.language.json,
-.source.json .meta.structure.array.json > .constant.language.json {
-  color: #56b6c2;
-}
-.source.ruby .constant.other.symbol > .punctuation {
-  color: inherit;
-}
-.source.python .keyword.operator.logical.python {
-  color: #c678dd;
-}
-.source.python .variable.parameter {
-  color: #d19a66;
-}
-#web-{ text-align:center; margin-top:0;}
-</style>
-  </head>
-  <body class='markdown-preview' data-use-github-style><h1 id="web-">Web前端开发-胡子杰-东南大学</h1>
-<hr>
-<h1 id="-">联系方式</h1>
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            font-family: "Hiragino Sans GB", "Microsoft Yahei", "SimSun", Arial, "Helvetica Neue", Helvetica;
+            color: #333;
+            word-wrap: break-word;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        main,
+        menu,
+        nav,
+        section,
+        summary {
+            display: block;
+        }
+
+        progress {
+            display: inline-block;
+            vertical-align: baseline;
+        }
+
+        a {
+            color: #555;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #00b38a;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 10px 0;
+            font-weight: normal;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        p+p {
+            margin-top: 10px;
+        }
+
+        img {
+            border: 0;
+            vertical-align: top;
+            display: inline-block;
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            margin: 0;
+            padding: 0;
+            border: 1px solid #ededed;
+            border-radius: 0;
+            font-family: "Hiragino Sans GB", "Microsoft Yahei", "SimSun", Arial, "Helvetica Neue", Helvetica;
+        }
+
+        textarea {
+            overflow: auto;
+        }
+
+        label,
+        select,
+        button,
+        input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        input[type="radio"],
+        input[type="checkbox"],
+        input[type="file"] {
+            cursor: pointer;
+        }
+
+        input[type=text],
+        input[type=password],
+        textarea {
+            font-family: "Microsoft Yahei", "SimSun", Arial, "Helvetica Neue", Helvetica;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        th,
+        td {
+            padding: 0;
+        }
+
+        strong {
+            font-weight: normal;
+        }
+
+        em,
+        i {
+            font-style: normal;
+        }
+
+        dl,
+        dt,
+        dd {
+            margin: 0;
+        }
+
+        ::selection {
+            color: #fff;
+            background-color: #00b38a;
+        }
+
+        ::-moz-selection {
+            color: #fff;
+            background-color: #00b38a;
+        }
+
+        ul,
+        ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #container {
+            width: 720px;
+            margin: 50px auto 54px auto;
+            border: 1px solid #e3ebe9;
+            border-radius: 5px;
+        }
+
+        .mr-template {
+            padding: 50px 50px 10px;
+        }
+
+        .mr-template .mr-template_title {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .mr-template .mr-template_title span {
+            font-size: 18px;
+            color: #333333;
+            font-weight: 600;
+            position: relative;
+            margin-left: 10px;
+        }
+
+        .mr-template .mr-template_title span:before {
+            content: '';
+            display: block;
+            border-left: 3px solid #00B38A;
+            height: 16px;
+            width: 3px;
+            position: absolute;
+            left: -7px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .mr-template .mr_md_del {
+            display: none;
+        }
+
+        /***** 基本信息 ****/
+
+        .basic {
+            padding: 50px;
+            background: #FAFAFA;
+            border-radius: 5px 5px 0 0;
+            border-bottom: 1px solid #E3EBE9;
+            display: flex;
+        }
+
+        .basic .basic-photo {
+            height: 88px;
+            width: 88px;
+            display: inline-block;
+            position: relative;
+        }
+
+        .basic .basic-photo img {
+            height: 88px;
+            width: 88px;
+            position: absolute;
+            top: 0;
+            border-radius: 50%;
+        }
+
+        .basic .basic-photo .basic-photo_shadow {
+            display: none;
+        }
+
+        .basic .basic-photo:hover .basic-photo_shadow {
+            display: block;
+        }
+
+        .basic .basic-info {
+            position: relative;
+            width: 100%;
+            margin-left: 20px;
+            flex: 1;
+        }
+
+        .basic .basic-info .edit-btn {
+            position: absolute;
+            right: 0;
+            top: 4px;
+        }
+
+        .basic .basic-info .basic-name-area {
+            overflow: hidden;
+            height: 37px;
+            margin-bottom: 11px;
+        }
+
+        .basic .basic-info .basic-name {
+            float: left;
+            max-width: 250px;
+            font-size: 26px;
+            color: #333333;
+            font-weight: 600;
+            line-height: 37px;
+        }
+
+        .basic .basic-info .icon-sex {
+            width: 13px;
+            height: 13px;
+            float: left;
+            margin-top: 16px;
+            margin-left: 10px;
+            background: none;
+        }
+
+        .basic .basic-info .icon-sex.icon-sex__male {
+            background: url(https://www.lgstatic.com/common/image/pc/icon_man.png);
+        }
+
+        .basic .basic-info .icon-sex.icon-sex__female {
+            background: url(https://www.lgstatic.com/common/image/pc/icon_woman.png);
+        }
+
+        .basic .basic-info .basic-self {
+            margin-top: 20px;
+        }
+
+        .basic .basic-info p {
+            font-size: 14px;
+            color: #333333;
+            line-height: 20px;
+            margin-top: 6px;
+        }
+
+        .basic .basic-info i {
+            display: inline-block;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+
+        .basic .basic-info .basic-tel_icon {
+            width: 11px;
+            height: 14px;
+            margin-right: 2px;
+            background: url(https://www.lgstatic.com/common/image/pc/icon_phone.png);
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .basic .basic-info .basic-email_icon {
+            width: 14px;
+            height: 11px;
+            margin-right: 2px;
+            background: url(https://www.lgstatic.com/common/image/pc/icon_mail.png);
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .basic .basic-info .basic-tel {
+            margin-right: 20px;
+        }
+
+        .basic-tel span {
+            vertical-align: middle;
+        }
+
+        .basic-email span {
+            vertical-align: middle;
+        }
+
+        /***** 基本信息 end ****/
+
+        /***** 自我描述 ****/
+
+        .per .per-self_content {
+            position: relative;
+        }
+
+        .per .per-self_content .per-self_des {
+            margin-top: 13px;
+            font-size: 14px;
+            color: #666666;
+            line-height: 30px;
+        }
+
+        .per .per-self_content .per-self_des p {
+            margin-top: 0;
+        }
+
+        .per .per-self_content .per-self_des ol {
+            list-style-type: decimal;
+            -webkit-padding-start: 20px;
+        }
+        .per .per-self_content .per-self_des ul {
+            list-style: disc;
+            -webkit-padding-start: 20px;
+        }
+
+        /***** 自我描述 end ****/
+
+        /***** 工作经历 ****/
+
+        .work-exp .work-exp_list {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .work-exp .work-exp_list .exp-list_time {
+            font-size: 14px;
+            color: #666666;
+            position: absolute;
+            right: 0;
+        }
+
+        .work-exp .work-exp_list .exp-list_top {
+            display: flex;
+            align-items: center;
+        }
+
+        .work-exp .work-exp_list .exp-list_top img {
+            width: 46px;
+            height: 46px;
+            margin-right: 10px;
+        }
+
+        .work-exp .work-exp_list .exp-list_top .exp-list_right {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            height: 46px;
+            justify-content: space-between;
+        }
+
+        .work-exp .work-exp_list .exp-list_top .exp-list_right p,
+        .work-exp .work-exp_list .exp-list_top .exp-list_right strong {
+            font-size: 14px;
+            color: #333333;
+        }
+
+        .work-exp .work-exp_list .exp-list_top .exp-list_right strong {
+            font-weight: 600;
+        }
+
+        .work-exp .work-exp_list .tagboard {
+            margin: 20px 0 10px;
+        }
+
+        .work-exp .work-exp_list .exp-list_content {
+            font-size: 14px;
+            color: #666666;
+            line-height: 30px;
+        }
+
+        .tagboard .tagboard-tag {
+            font-size: 12px;
+            color: #999;
+            line-height: 18px;
+            padding: 3px 10px;
+            border: 1px solid #EAEDEC;
+            border-radius: 100px;
+            margin-right: 10px;
+        }
+
+        .work-exp .work-exp_list .exp-list_content ul, .work-exp .work-exp_list .exp-list_content_highlight ul {
+            list-style: disc;
+            -webkit-padding-start: 20px;
+        }
+
+        .work-exp .work-exp_list .exp-list_content ol, .work-exp .work-exp_list .exp-list_content_highlight ol {
+            list-style-type: decimal;
+            -webkit-padding-start: 20px;
+        }
+        /***** 工作经历 end ****/
+
+        /***** 项目经历 ****/
+
+        .pro-exp .pro-exp_list {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .pro-exp .pro-exp_list .exp-list_title {
+            font-size: 14px;
+            color: #333333;
+            font-weight: 600;
+            cursor: default;
+            display: flex;
+        }
+
+        .pro-exp .pro-exp_list .exp-list_title .exp-project_name, .pro-exp .pro-exp_list .exp-list_title .exp-project_company span {
+            max-width: 222px;
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .pro-exp .pro-exp_list .exp-list_title .exp-project_company {
+            display: flex;
+        }
+
+        .pro-exp .pro-exp_list .exp-list_time {
+            font-size: 14px;
+            color: #666666;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .pro-exp .pro-exp_list .exp-list_content,
+        .pro-exp .pro-exp_list .exp-project_des {
+            font-size: 14px;
+            color: #666666;
+            line-height: 30px;
+            margin-top: 10px;
+        }
+
+        .pro-exp .exp-list_title.active:hover {
+            color: #00B38A;
+            cursor: pointer;
+        }
+        .pro-exp .exp-project_url {
+            font-size: 14px;
+            color: #666;
+            line-height: 30px;
+        }
+        .pro-exp .pro-exp_list .exp-list_content ul, .pro-exp .pro-exp_list .exp-project_des ul {
+            list-style: disc;
+            -webkit-padding-start: 20px;
+        }
+
+        .pro-exp .pro-exp_list .exp-list_content ol,.pro-exp .pro-exp_list .exp-project_des ol{
+            list-style-type:decimal;-webkit-padding-start:20px
+        }
+
+        /***** 项目经历 end ****/
+
+        /***** 教育经历 ****/
+
+        .edu-exp .edu-exp_list {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .edu-exp .edu-exp_list .exp-list_time {
+            font-size: 14px;
+            color: #666666;
+            position: absolute;
+            right: 0;
+        }
+
+        .edu-exp .edu-exp_list .exp-list_top {
+            display: flex;
+            align-items: center;
+        }
+
+        .edu-exp .edu-exp_list .exp-list_top img {
+            width: 46px;
+            height: 46px;
+            margin-right: 10px;
+        }
+
+        .edu-exp .edu-exp_list .exp-list_top .exp-list_right {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            height: 46px;
+            justify-content: space-between;
+        }
+
+        .edu-exp .edu-exp_list .exp-list_top .exp-list_right p,
+        .edu-exp .edu-exp_list .exp-list_top .exp-list_right strong {
+            font-size: 14px;
+            color: #333333;
+        }
+
+        .edu-exp .edu-exp_list .exp-list_top .exp-list_right strong {
+            font-weight: 600;
+        }
+
+
+        /***** 教育经历 end ****/
+
+        /***** 社交主页 ****/
+
+        .social-page .social-page_list {
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .social-page .social-page_list .social-page_content {
+            display: flex;
+        }
+
+        .social-page .social-page_list .social-page_content img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+        .social-page .social-page_list .social-page_content p {
+            font-size: 14px;
+            color: #666666;
+        }
+
+
+        /***** 社交主页 end ****/
+                /***** 图片作品 ****/
+
+        .portfolio-page .portfolio-list{
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .portfolio-page .portfolio-list .portfolio-content{
+            font-size: 14px;
+            color: #666666;
+        }
+
+
+        /***** 图片作品 end ****/
+    </style>
+</head>
+
+    <body>
+        <div id="container">
+            <!-- 基本信息 -->
+            <div class="basic" id="baseInfo">
+                <div class="basic-photo">
+                    <img class="mr_headimg user-avatar" id="userpic" src="https://www.lgstatic.com//common/image/pc/default_boy_headpic2.png" width="120" height="120" alt="头像"
+                    />
+                </div>
+                <div class="basic-info">
+                    <div class="basic-name-area">
+                        <p class="basic-name female">胡子杰</p>
+                            <i class="icon-sex icon-sex__male"></i>
+                    </div>
+                                <p>
+                                    <span class="basic-company">广州赛宝腾睿信息科技有限公司</span>
+                                    <span> / </span>
+                                    <span class="basic-job">JavaScript</span>
+                                </p>
+                            <p class="basic-self">
+                                    <span class="basic-exp">3年工作经验 / </span>
+                                    <span class="basic-edu">硕士
+                                         / 
+                                    </span>
+                                    <span class="basic-age">28岁</span>
+                            </p>
+                    <p>
+                            <span class="basic-tel">
+                                <i class="basic-tel_icon"></i>
+                                <span>13729892227</span>
+                            </span>
+                            <span class="basic-email">
+                                <i class="basic-email_icon"></i>
+                                <span>137844255@qq.com</span>
+                            </span>
+                    </p>
+                </div>
+            </div>
+            <!-- /基本信息 -->
+
+            <!-- 自我描述 -->
+            <div class="mr-template per" id="perAbility">
+                <div class="mr-template_title">
+                    <span>自我描述</span>
+                </div>
+                <div class="tagboard integrative-tag">
+                    <div class="integrative-tag_content">
+                                <span class="tagboard-tag">执行力</span>
+                                <span class="tagboard-tag">抗压能力</span>
+                                <span class="tagboard-tag">沟通协调能力</span>
+                                <span class="tagboard-tag">适应能力</span>
+                                <span class="tagboard-tag">时间管理</span>
+                    </div>
+                </div>
+                <div class="per-self_content">
+                        <div class="per-self_des">
+                            <p><br /></p>
 <ul>
-<li>手机：15190293098</li>
-<li>Email：137844255@qq.com</li>
-<li>QQ/微信号：137844255</li>
+ <li><p>对新技术充满好奇，喜欢钻研；</p></li>
+ <li><p>工作中注重细节和效率；</p></li>
+ <li><p>性格坚韧、自律，坚持每周固定时间的锻炼和读书。</p></li>
 </ul>
-<hr>
-<h1 id="-">个人信息</h1>
-<ul>
-<li>胡子杰/男/1990</li>
-<li>研究生/东南大学集成电路学院(17年毕业)</li>
-<li>技术博客：<a href="http://echovic.github.io" target="_blank">http://echovic.github.io</a></li>
-<li>Github: echoVic</li>
-<li>期望职位：Web前端开发程序员，前端架构师</li>
-<li>期望薪资：随行就市，特别喜欢的公司例外</li>
-<li>期望城市：广州，深圳</li>
-</ul>
-<hr>
-<h1 id="-">项目经历</h1>
-<h2 id="-2016-7-">实习期间 （ 2016年6月 ~ 至今 ）</h2>
-<h3 id="-">制作公司网站</h3>
-<p>在南京蓝思科技有限公司实习期间，我主要负责公司的Web前端开发。南京蓝思科技主要是做物联网相关的技术产品和解决方案的研发，因此需要一个互联网的平台去展示公司的产品。我在实习期间，使用bootstrap框架制作公司的网站，主页主要包括导航条，Carousel滚动图片，三栏布局的展品展示以及页脚部分，利用git进行版本控制，目前已上线，网址：<a href="http://www.lansitec.com/" target="_blank">www.lansitec.com。</a>网站还在持续优化中。</p>
-<h3 id="-">物联网平台前端的研发</h3>
-<p>公司的物联网终端有一个信息管理平台，我主要负责物联网平台前端的开发，包括登陆界面以及内容界面，需要利用html5、css3、javascript以及ajax技术，工作过程中与后端开发工程师交流，制定数据接口;同时还负责物联网信息管理平台功能的设计与开发，主要是基于百度地图API以及鹰眼轨迹服务进行web开发，例如GPS定位，实时轨迹显示，历史轨迹查询，物联网终端数据可视化等功能，目前项目正在研发中，基础版本已上线，网址：<a href="http://www.lansitec.com/iot" target="_blank">请点我www.lansitec.com/iot</a>。</p>
-<h3 id="-">体育赛事管理系统</h3>
-<p>公司的终端产品应用于体育赛事，因此需要设计开发一套赛事管理系统，主要应用于PC端。作为项目前端开发负责人，我参与了系统的设计和开发。首先，使用原型设计软件Axure RP设计系统原型，包括系统的定义需求和规格，需要的功能以及基本的界面。其次，与UI合作设计网页的界面。然后，与后台开发人员沟通，设计数据接口，前后端分离。最后，对系统的前端进行开发。开发过程中，使用的前端框架是Vue.js、Bootstrap和jQuery，通过Vue.js将页面组件化，提高开发效率和网页性能，使用bootstrap控制页面的表现形式，对于一些动画效果，使用jQuery进行开发。目前系统正在开发中，还未上线。</p>
-<h2 id="-2014-9-">读研期间 （ 2014年9月 ~ 至今 ）</h2>
-<h3 id="-">嵌入式系统实训——智能小车</h3>
-<p>我在此项目中主要负责智能小车的软件部分，在ADS开发环境下，利用C语言编程，实现智能小车的行走、巡线和灭火的功能。在这个项目中，我提高了算法和编程的能力，并加深了对程序设计流程的理解，这对我后来的web前端学习有很大的帮助。</p>
-<h3 id="-www-shysha-com-">搭建论坛（www.shysha.com）</h3>
-<p>首先注册域名，租用西部数据的服务器，其次利用discuz模版搭建门户网站，最后使用HTML和CSS技术设计网站模版。后台服务器模型采用PHP+MySql，因此我学习了PHP语言和MySql数据库，以便能看懂后端的程序。论坛搭建成功之后，每天更新内容，更新的内容多为网上搜索的互联网咨询以及我在学习过程中的笔记和总结，同时对论坛进行SEO优化，目前网站的百度权重为1，日流量近百。</p>
-<hr>
-<h1 id="-">开源项目和作品</h1>
-<h2 id="-">开源项目</h2>
-<ul>
-<li><a href="https://jsfiddle.net/echoVic/x70t5p7u/1/" target="_blank">Vue.js实现表格的CRUD功能</a> :使用v-model与表格数据绑定可增加表格数据，使用过滤器orderBy和filterBy实现排序和查询功能。v-on绑定函数实现删除和修改功能。</li>
-<li><a href="https://github.com/echoVic/Readonly-shanbei" target="_blank">chrome去广告插件</a> : 版本1.0，更新中···目前只能针对某一网页实现去除广告的功能，<a href="http://www.theguardian.com/politics/2015/may/28/david-cameron-sets-off-on-mission-to-win-over-european-leaders" target="_blank">测试页面</a>。</li>
-<li><a href="https://github.com/echoVic/echoVic.github.io" target="_blank">个人blog和作品展示</a>：持续更新中···工作学习过程中的经验总结以及Web前端的小作品。</li>
-</ul>
-<h2 id="-">技术文章</h2>
-<ul>
-<li><a href="http://echovic.github.io/2016/03/03/My-New-Post/" target="_blank">搭建Hexo个人博客部署到github</a></li>
-<li><a href="http://www.shysha.com/forum.php?mod=viewthread&amp;tid=303" target="_blank">display：block，inline，inline-block的区别</a></li>
-<li><a href="http://www.shysha.com/forum.php?mod=viewthread&amp;tid=301&amp;page=1&amp;extra=#pid476" target="_blank">JavaScript常用的6种内置函数</a></li>
-</ul>
-<h1 id="-">技能清单</h1>
-<p>以下均为我熟练使用的技能</p>
-<ul>
-<li>Web前端：HTML/CSS/JavaScript/jQuery库/Bootstrap</li>
-<li>前端工具：Atom/Dreamweaver/Photoshop/WebStorm</li>
-<li>版本管理工具：Git</li>
-<li>语言能力：英语6级，并曾获校研究生院口语竞赛二等奖</li>
-</ul>
-<p>以下均为我了解的技能</p>
-<ul>
-<li>Web开发：PHP/Java/Node/Ajax</li>
-<li>前端框架：Bootstrap/Vue.js</li>
-<li>数据库相关：MySQL</li>
-</ul>
-<hr>
-<h1 id="-">致谢</h1>
-<p>感谢您花时间阅读我的简历，期待能有机会和您共事。</p></body>
+                        </div>
+                </div>
+            </div>
+            <!-- /自我描述 -->
+
+
+            <!-- 工作经历 -->
+                <div class="mr-template work-exp" id="workExp">
+                    <div class="mr-template_title">
+                        <span>工作经历</span>
+                    </div>
+                    <ol class="work-exp_group">
+                            <li class="work-exp_list">
+                                <p class="exp-list_time">2017.03-至今</p>
+                                <div class="exp-list_top">
+                                    <img src="https://www.lgstatic.com/images/logo_default.png" alt="公司Logo">
+                                    <div class="exp-list_right">
+                                        <strong class="exp-list_title">
+                                            <span>广州赛宝腾睿信息科技有限公司</span>
+                                             ／
+                                                <span>技术研发部</span>
+                                        </strong>
+                                        <p>JavaScript</p>
+                                    </div>
+                                </div>
+                                <div class="tagboard">
+                                        <span class="tagboard-tag">前端开发</span>
+                                        <span class="tagboard-tag">Javascript</span>
+                                        <span class="tagboard-tag">webGL</span>
+                                </div>
+                                <div class="exp-list_content">
+                                    1、前端架构设计和开发
+<br />2、基于webGL开发3D交互控件
+<br />3、基于SVG、VML开发跨浏览器流程编辑器
+<br />4、交互式电子手册阅读器移动版开发
+                                </div>
+                            </li>
+                            <li class="work-exp_list">
+                                <p class="exp-list_time">2016.11-2017.03</p>
+                                <div class="exp-list_top">
+                                    <img src="https://www.lgstatic.com/images/logo_default.png" alt="公司Logo">
+                                    <div class="exp-list_right">
+                                        <strong class="exp-list_title">
+                                            <span>广州中科院计算机网络信息中心</span>
+                                             ／
+                                                <span>技术部</span>
+                                        </strong>
+                                        <p>WEB前端</p>
+                                    </div>
+                                </div>
+                                <div class="tagboard">
+                                        <span class="tagboard-tag">Vue</span>
+                                        <span class="tagboard-tag">Node.js</span>
+                                        <span class="tagboard-tag">Web前端</span>
+                                </div>
+                                <div class="exp-list_content">
+                                    <p>物联网云平台前端设计和开发</p>
+                                </div>
+                            </li>
+                            <li class="work-exp_list">
+                                <p class="exp-list_time">2016.06-2016.11</p>
+                                <div class="exp-list_top">
+                                    <img src="https://www.lgstatic.com/images/logo_default.png" alt="公司Logo">
+                                    <div class="exp-list_right">
+                                        <strong class="exp-list_title">
+                                            <span>南京蓝思科技有限公司</span>
+                                             ／
+                                                <span>技术部</span>
+                                        </strong>
+                                        <p>WEB前端</p>
+                                    </div>
+                                </div>
+                                <div class="tagboard">
+                                        <span class="tagboard-tag">Javascript</span>
+                                        <span class="tagboard-tag">CSS</span>
+                                        <span class="tagboard-tag">bootstrap</span>
+                                </div>
+                                <div class="exp-list_content">
+                                    <p>1、前端设计和开发</p>
+<p>2、公司首页开发</p>
+<p>3、物联网终端管理平台前端开发</p>
+<p>4、赛事管理平台前端开发</p>
+                                </div>
+                            </li>
+                    </ol>
+                </div>
+            <!-- /工作经历 -->
+
+            <!-- 项目经历 -->
+                <div class="mr-template pro-exp" id="proExp">
+                    <div class="mr-template_title">
+                        <span>项目经历</span>
+                    </div>
+                    <ol class="pro-exp_group">
+                            <li class="pro-exp_list">
+                                <p class="exp-list_title">
+                                    <span class="exp-project_name">流程编辑器（跨浏览器可集成）</span>
+                                    <span class="exp-project_company">（<span>广州赛宝腾睿信息科技有限公司</span>）</span>
+                                </p>
+                                <p class="exp-list_time">2017.10-至今</p>
+                                <div class="exp-project_des"><p></p>
+<p>负责项目需求对接、项目计划制定、项目设计、项目开发及测试跟进。</p>该项目基于SVG、VML开发流程编辑器组件，可支持IE6+、火狐、谷歌等浏览器。主要功能：1、绘制基础流程图；2、扩展定制化图元；3、导出SVG图；4、数据导入；5、自动绘图并排版；6、集成富文本编辑器编辑图元属性。7、多系统集成。
+<br />该项目集成在公司的CMS（基于.net）中，实现以流程图形式编辑故障类数据，并在交互式电子手册阅读器中以流程图形式查看故障隔离。具体功能如下：
+<br />● 支持新建、导入故障类数据模块进行图形化编辑。
+<br />● 提供类似visio的流程图编辑，支持步骤节点和结束节点，支持是否连线和多选择连线。
+<br />● 支持图形大小调整，位置调整，并记录编辑结果。
+<br />● 支持流程图正确性校验，能够展示错误信息，并可以进行错误定位。
+<br />● 能够根据故障类数据模块xml自动生成流程图。
+<br />● 支持放大缩小，画布设置，并记录设置结果。
+<br />● 支持节点的复制粘贴。
+<br />● 阅读器上支持以流程图形式查看故障隔离，可以通过上一步/下一步按钮高亮流程图相应的节点。
+<br />
+<p></p></div>
+                                <div class="exp-list_content">
+                                    <p>填补公司以流程图形式编辑数据的空白，增加了客户粘性。</p>
+                                </div>
+                            </li>
+                            <li class="pro-exp_list">
+                                <p class="exp-list_title">
+                                    <span class="exp-project_name">交互式电子手册阅读器移动版</span>
+                                    <span class="exp-project_company">（<span>广州赛宝腾睿信息科技有限公司</span>）</span>
+                                </p>
+                                <p class="exp-list_time">2018.05-2018.12</p>
+                                <div class="exp-project_des"><p></p>负责项目前端计划制定、设计、开发及测试跟进。&nbsp;&nbsp;&nbsp;
+<br />本项目主要任务是开发面向移动设备的H5 IETM阅读器，使用react+react-router+redux+webpack技术栈开发阅读器框架，集成公司出版的数据模块，能够在微信、移动端浏览器上直接使用，支持故障类、图解类、程序类和故障类数据模块的交互阅读，提供图文表互动、步进模式、故障引导、三维阅读等交互阅读效果，支持视频、矢量图、二维图形等多媒体。主要实现功能如下：
+<br />1. 实现3D在线阅读，支持模型内热点链接到指定数据模块。
+<br />2. 支持描述类、图解类、程序类和故障类的交互阅读。
+<br />3. 支持图表联动，图文互动，热点链接，步进模式，故障引导，警告弹窗等阅读效果。
+<br />4. 支持以流程图形式查看故障类。
+<br />5. 支持MP4视频和MP3音频在线播放。
+<br />6. 支持SVG矢量图查看，并可以放大缩拖动。
+<br />7. 支持jpg、png等二维图形查看。
+<br />8. 支持三维图形在线查看，并可以旋转，缩放，暂停，播放等。
+<br />9. 提供书签，阅读历史，搜索，微信语音搜索等功能。
+<br />10. 支持微信及常用手机浏览器。
+<br />
+<p></p></div>
+                                <div class="exp-list_content">
+                                    <p>实现公司IETM阅读器移动端改造，拓宽产品使用场景</p>
+                                </div>
+                            </li>
+                            <li class="pro-exp_list">
+                                <p class="exp-list_title">
+                                    <span class="exp-project_name">汽车3D交互式电子展厅</span>
+                                    <span class="exp-project_company">（<span>广州赛宝腾睿信息科技有限公司</span>）</span>
+                                </p>
+                                <p class="exp-list_time">2018.02-2018.06</p>
+                                <div class="exp-project_des"><p>负责项目需求对接、项目计划制定、项目设计、项目开发及测试跟进。</p>
+<p>该项目基于webGL和playcanvas平台，开发汽车3D交互式组件。可实现功能：</p> 
+<ol>
+ <li>环境和地面变化；<br /></li>
+ <li>3D模型自动旋转和手动旋转；<br /></li>
+ <li>开关车门；<br /></li>
+ <li>开关车窗；<br /></li>
+ <li>车轮旋转；<br /></li>
+ <li>汽车颜色变换；<br /></li>
+ <li>汽车车灯开关；<br /></li>
+ <li>触摸模型组件控制汽车行为；<br /></li>
+ <li>提供外部接口，与其他系统集成。<br /></li>
+</ol></div>
+                                <div class="exp-list_content">
+                                    <p>拓展公司在Web端3D领域的业务，为公司增加产值。</p>
+                                </div>
+                                <p class="exp-project_url">项目链接: http://cepreiietm.com/cos/index.html</p>
+                            </li>
+                            <li class="pro-exp_list">
+                                <p class="exp-list_title">
+                                    <span class="exp-project_name">3d交互式看图控件</span>
+                                    <span class="exp-project_company">（<span>广州赛宝腾睿信息科技有限公司</span>）</span>
+                                </p>
+                                <p class="exp-list_time">2017.04-2017.10</p>
+                                <div class="exp-project_des"><p>负责项目计划制定、项目设计、项目开发及测试跟进。</p> 
+<p>基于webGL标准，采用three.js框架开发轻量级、跨平台的3D看图控件，提供集成接口，支持3D模型的查看、基础操作以及模型的热点交互。</p> 
+<p><br /></p></div>
+                                <div class="exp-list_content">
+                                    <p>完成控件开发，并使其可在实际项目使用</p>
+                                </div>
+                            </li>
+                            <li class="pro-exp_list">
+                                <p class="exp-list_title">
+                                    <span class="exp-project_name">物联网云平台</span>
+                                    <span class="exp-project_company">（<span>广州中科院计算机网络信息中心</span>）</span>
+                                </p>
+                                <p class="exp-list_time">2016.11-2017.03</p>
+                                <div class="exp-project_des"><p>广州中国科学院计算机网络信息中心实习期间，参与物联网云平台项目，负责云平台首页及后台管理系统界面开发，使用vue+vue-router+vuex+webpack技术栈进行开发。</p></div>
+                                <div class="exp-list_content">
+                                    前端开发实习
+                                </div>
+                            </li>
+                            <li class="pro-exp_list">
+                                <p class="exp-list_title">
+                                    <span class="exp-project_name">物联网终端管理平台</span>
+                                    <span class="exp-project_company">（<span>南京蓝思科技有限公司</span>）</span>
+                                </p>
+                                <p class="exp-list_time">2016.06-2016.11</p>
+                                <div class="exp-project_des"><p>南京蓝思实习期间，参与物联网终端管理平台项目开发，主要负责界面开发、基于百度地图API和鹰眼服务开发。最终完成界面开发，GPS定位功能，物联网终端实时轨迹和历史轨迹查询功能。</p></div>
+                                <div class="exp-list_content">
+                                    前端开发实习
+                                </div>
+                            </li>
+                    </ol>
+                </div>
+            <!-- /项目经历 -->
+                <!-- 教育经历 -->
+                    <div class="mr-template edu-exp" id="eduExp">
+                        <div class="mr-template_title">
+                            <span>教育经历</span>
+                        </div>
+                        <ol class="edu-exp_group">
+                                <li class="edu-exp_list">
+                                    <p class="exp-list_time">2014-2017</p>
+                                    <div class="exp-list_top">
+                                        <img src="https://www.lgstatic.com/i/image/M00/AD/4E/Cgp3O1i1E3uAZagGAAAQrNl_uHk12.jpeg" alt="学校Logo">
+                                        <div class="exp-list_right">
+                                            <strong>东南大学</strong>
+                                            <p>硕士 / 嵌入式系统</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="edu-exp_list">
+                                    <p class="exp-list_time">2008-2012</p>
+                                    <div class="exp-list_top">
+                                        <img src="https://www.lgstatic.com/images/logo_default.png" alt="学校Logo">
+                                        <div class="exp-list_right">
+                                            <strong>中国矿业大学（北京）</strong>
+                                            <p>本科 / 电气工程与自动化</p>
+                                        </div>
+                                    </div>
+                                </li>
+                        </ol>
+                    </div>
+                <!-- /教育经历 -->
+
+            <!-- 社交主页 -->
+            <!-- /社交主页 -->
+
+            <!-- 图片作品 -->
+            <!-- /图片作品 -->
+        </div>
+    <script type="text/javascript" src="https://www.lagou.com/upload/oss.js"></script></body>
+
 </html>
